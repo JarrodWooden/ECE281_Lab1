@@ -62,9 +62,28 @@ to compare it to:
 *_After the simulation was correct I made a .ucf file to make_*
 *_the constraints for the NEXYS 2_*
 
+Here is an example of the code in the .ucf file:
 
+```
+NET "A<0>" LOC = "G18"; # Type = INPUT, Sch name = SW0
+NET "A<1>" LOC = "H18"; # Type = INPUT, Sch name = SW1
+NET "A<2>" LOC = "K18"; # Type = INPUT, Sch name = SW2
+```
 
+**NOTE**: The above is for the st_logic_vector where each element in the vector "A<element>"
+is pointing to a pin "G18" for example
 
+For the output for the three bit each element is added with "X";
+gets the value for the X output wire in the architecture and
+points it at the desired pin in the NEXYS 2
+
+After that I **Implement Design**
+then, **Generate Programming File**
+then, **Configure Target Device**
+Finally program the .bit file to the NEXYS 2 Device
+
+After the LED's lit up correctly to match the truth table above
+I worked on the 8 BIT 2s Converter
 
 #8 BIT 2s CONVERTER
 
@@ -87,6 +106,13 @@ The code to flip the bits and add one is shown **belowwww**
 ```
 signal A_NOT : std_logic_vector (7 downto 0);
 ```
+
+**NOTE**: Follow the steps above from the 3 BIT Converter to implement design,
+generate programming file, and configure target device
+
+
+#THANK YOU FOR READING MY README
+#**HAVE A GREAT AIR FORCE DAY!!**
 
 
 
