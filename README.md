@@ -8,6 +8,8 @@ This is the repo for Lab One
 Do my results match my truth table?
 They Do!!!
 
+*************
+
 ##Truth Table
 
 First I made the truth table for the 3 bit 2s converter
@@ -16,12 +18,15 @@ I simply flipped all the bits and added one to create the truth table
 
 ![alt text](https://raw2.github.com/JarrodWooden/ECE281_Lab1/master/Truth_Table.jpg "Truth Table")
 
+
 Next I made K-Maps to find the equation needed to connect the wires
 in the architecture
 
 My architecture to connect the wires are shown below
 if you compare the wires to the schematic you can see that
 all the connections agree with the schematic
+
+##Wire Connections
 
 ```
 A_NOT <= not A;
@@ -36,6 +41,8 @@ X <= D or E or F;
 Y <= G or H;
 Z <= C;
 ```
+
+********************
 
 ##Schematic
 
@@ -70,10 +77,10 @@ NET "A<1>" LOC = "H18"; # Type = INPUT, Sch name = SW1
 NET "A<2>" LOC = "K18"; # Type = INPUT, Sch name = SW2
 ```
 
-**NOTE**: The above is for the st_logic_vector where each element in the vector "A<element>"
-is pointing to a pin "G18" for example
+**NOTE**: The above is for the 'st_logic_vector' where each element in the vector ' "A<element>" '
+is pointing to a pin ' "G18" ' for example
 
-For the output for the three bit each element is added with "X";
+For the output for the three bit each element is added with ' "X" ';
 gets the value for the X output wire in the architecture and
 points it at the desired pin in the NEXYS 2
 
@@ -84,6 +91,10 @@ Finally program the .bit file to the NEXYS 2 Device
 
 After the LED's lit up correctly to match the truth table above
 I worked on the 8 BIT 2s Converter
+
+
+***********************
+
 
 #8 BIT 2s CONVERTER
 
@@ -98,7 +109,7 @@ use ieee.std_logic_arith.all;
 use ieee.numeric_std.all;
 ```
 
-The above code used in my File was to be able to use the unsigned std_logic_vector
+The above code used in my File was to be able to use the unsigned 'std_logic_vector'
 so that is was easy to flip the bits and add one in the architecture
 
 The code to flip the bits and add one is shown **belowwww**
