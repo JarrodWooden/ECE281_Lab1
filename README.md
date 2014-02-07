@@ -77,10 +77,10 @@ NET "A<1>" LOC = "H18"; # Type = INPUT, Sch name = SW1
 NET "A<2>" LOC = "K18"; # Type = INPUT, Sch name = SW2
 ```
 
-**NOTE**: The above is for the 'st_logic_vector' where each element in the vector ' "A<element>" '
-is pointing to a pin ' "G18" ' for example
+**NOTE**: The above is for the `st_logic_vector` where each element in the vector ` "A<element>" `
+is pointing to a pin ` "G18" ` for example
 
-For the output for the three bit each element is added with ' "X" ';
+For the output for the three bit each element is added with ` "X" `;
 gets the value for the X output wire in the architecture and
 points it at the desired pin in the NEXYS 2
 
@@ -99,7 +99,7 @@ I worked on the 8 BIT 2s Converter
 #8 BIT 2s CONVERTER
 
 Below is the libraries that needed to be imported and used to use
-the standard logic vectors
+the `standard_logic_vector`
 
 ```
 library IEEE;
@@ -109,7 +109,7 @@ use ieee.std_logic_arith.all;
 use ieee.numeric_std.all;
 ```
 
-The above code used in my File was to be able to use the unsigned 'std_logic_vector'
+The above code used in my File was to be able to use the unsigned `std_logic_vector`
 so that is was easy to flip the bits and add one in the architecture
 
 The code to flip the bits and add one is shown **belowwww**
